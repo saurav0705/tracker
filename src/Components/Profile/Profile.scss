@@ -1,0 +1,43 @@
+.profile{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    .heading{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 10px;
+        
+    }
+    .open-btn{
+        display: none;
+        // position: fixed;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    .profile{
+    .userInfo{
+        
+        width: 0;
+        z-index: 2;
+        position: fixed;
+        left:0;
+        overflow: hidden;
+        
+    }
+    .alert{
+        width: 100%;
+    }
+    .open-btn{
+        display: block;
+    }
+}
+.userInfo{
+    .close{
+        display: block;
+    }
+}
+
+}

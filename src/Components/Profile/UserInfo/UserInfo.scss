@@ -1,0 +1,102 @@
+.userInfo{
+    // background-color: lightgrey;
+    position: sticky;
+    top:0;
+    height: 100%;
+    flex:1;
+    // overflow: hidden;
+    background-color: white;
+
+    &::after{
+        height:10px;
+        width: 10px;
+        background-color: black;
+    }
+    .close{
+        color: tomato;
+        transition-duration: 200ms;
+        display: none;
+        &:hover{
+            color: red;
+        }
+    }
+    .image-container{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        margin: auto;
+        margin-top: 4vh;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .name{
+        padding-top: 2vh;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    .email{
+        color: goldenrod;
+        &:hover{
+            color: darkgoldenrod;
+            text-decoration: underline;
+        }
+    }
+    .alerts{
+        .status{
+            text-transform: capitalize;
+            margin-top: 2vh;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            td{
+                width:50%;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 5px;
+            }
+            .active{
+                background-color: lightgreen;
+                color: green;
+            }
+            .closed{
+                background-color: tomato;
+                color: red;
+            }
+            .total{
+                background-color: lightblue;
+                color: blue;
+            }
+        }
+
+    }
+    .delete{
+        margin-top: 1vh;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: #9d3135;
+        margin-bottom: 2vh;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: #c81918;
+        }
+
+    }
+}
+
+@media screen and (max-width:600px){
+    .userInfo{
+        .close{
+            display: block;
+        }
+    }
+}
