@@ -11,7 +11,7 @@ const UserInfo = () => {
             <div className="close" onClick={() => close()}><IoMdCloseCircle/></div>
             <div className="heading">user Info</div>
             <div className="image-container">
-                <img src="https://drive.google.com/uc?id=10QFET3vVxDFZdSUaL0IfXILS53tL3Nfc"/>
+                <img src="https://drive.google.com/uc?id=10QFET3vVxDFZdSUaL0IfXILS53tL3Nfc" alt="profile"/>
             </div>
             <div className="name">Saurav Aggarwal</div>
             <div className="email">sauravaggarwal98@gmail.com</div>
