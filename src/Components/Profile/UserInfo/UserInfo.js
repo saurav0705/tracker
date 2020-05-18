@@ -4,7 +4,7 @@ import {IoMdCloseCircle} from 'react-icons/io';
 const UserInfo = () => {
     const close = () => {
         document.querySelector(".userInfo").style.width = "0";
-
+        
     }
     return (
         <div className="userInfo">

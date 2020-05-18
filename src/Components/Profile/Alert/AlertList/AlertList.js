@@ -2,6 +2,7 @@ import React from 'react';
 import './AlertList.scss';
 import {MdDelete,MdPauseCircleFilled} from 'react-icons/md';
 import {IoMdPlayCircle} from 'react-icons/io';
+import {FaShoppingCart} from 'react-icons/fa';
 const AlertList = (props) => {
     let data  = {
         "name":"Real Fruit Juice",
@@ -20,7 +21,7 @@ const AlertList = (props) => {
             {Array(210).fill("something").map( (card,index) => {return (
             <div className="alert-tile" key={index} >
                 <div className="title" onClick={() => props.select({...data,id:index})}>{data.name}</div>
-                <div className="url" onClick={() => window.open(data.url)}>view</div>
+                <div className="url" onClick={() => window.open(data.url)}><FaShoppingCart/></div>
             <div className="alert-price">Alert Price : {data.alert_price}</div>
             <div className="actions">
             <div className={data.status}>{data.status}</div>

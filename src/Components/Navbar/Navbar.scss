@@ -1,15 +1,50 @@
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: black;
     color: white;
     .nav-item{
         padding: 5px 10px;
         font-size: 1.5rem;
+        margin: 1vh;
         cursor: pointer;
-        &:hover{
-            color: yellow;
+        button{
+            float:right;
+            border: none;
+            background-color: #de5246;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            transition-duration: 200ms;
+            border: 2px solid #de5246;
+            // clip-path: circle(23% at 18% 54%);
+            &:hover{
+                // clip-path: circle(100%);
+                background-color: white;
+                color:#de5246;
+                
+                
+            }
+            &::before{
+                position: absolute;
+                z-index: -1;
+                background-color: white;
+                
+            }
         }
     }
+    .open-btn{
+        display: none;
+        margin-right: 1vh;
+    }
 
+}
+
+@media screen and (max-width:600px){
+    .nav{
+        .open-btn{
+            display:inline-block;
+        }
+    }
 }

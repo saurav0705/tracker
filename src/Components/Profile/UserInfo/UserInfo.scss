@@ -1,10 +1,12 @@
 .userInfo{
     // background-color: lightgrey;
+    padding: 0px 10px;
     position: sticky;
     top:0;
     height: 100%;
     flex:1;
     // overflow: hidden;
+    transition-duration: 500ms;
     background-color: white;
 
     &::after{

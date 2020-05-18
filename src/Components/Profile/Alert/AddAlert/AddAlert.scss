@@ -1,0 +1,44 @@
+.add-data{
+    table {
+        display: block;
+        tr{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2vh;
+        .label{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        td{
+            flex: 1;
+            input{
+                border: 2px solid black;
+                padding: 8px;
+                transition-duration: 200ms;
+                &:focus{
+                    border: 2px solid blue;
+                }
+            }
+        }
+    }
+}
+.btn-ok{
+    background-color: #4896ba;
+    border: 2px solid #4896ba;
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 2vh;
+    transition-duration: 200ms;
+    font-weight: 500;
+    &:hover{
+        background-color: #1468a8;
+        border: 2px solid #1468a8;
+        
+    }
+}
+}
